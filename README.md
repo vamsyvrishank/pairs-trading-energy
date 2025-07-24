@@ -1,38 +1,40 @@
+# Pairs Trading in the Energy Sector
+
+## The Energy Sector
+
+The energy sector consists of companies involved in the production, distribution, and servicing of energy resources. This includes:
+
+- Fossil Fuels
+- Nuclear Energy
+- Renewable Energy
+- Infrastructure Companies
+- Equipment Providers and Servicers
 
 
+### Classification: GICS System
 
-# The Energy Sector
+To understand the sector hierarchy, we use the Global Industry Classification Standard (GICS), developed by MSCI and S\&P in 1999. It is the most widely used system for classifying publicly traded equities worldwide.
 
-Energy sector refers to companies involved in production , distribution and servicing of the energy resources. This include
+#### GICS Hierarchy Table
 
--Fossil Fules 
--Nuclear Energy
--Renewable Energy 
--Infrastructure Companies 
--Equipment Providers and servicers
+| Level | Description | Example |
+| :-- | :-- | :-- |
+| Sector (2 digits) | Broad economic segment | 10 – Energy |
+| Industry Group (4 digits) | Subdivision of sector | 1010 – Energy Equipment \& Services |
+| Industry (6 digits) | More specific categorization | 101010 – Oil \& Gas Drilling |
+| Sub-Industry (8 digits) | Most granular level | 10101010 – Offshore Drilling |
 
-A classification system to understand the heirarchy is used called GICS ( Global Industry Classification Standard) developed my MSCI ( Morgan Stanley Capital International) and S&P (  Standard and Poor's) in 1999. It is now the most widely used classifying system for publically traded equities worldwide.
+There are:
 
-GICS is heirarchical
-
-| Level                         | Description                  | Example                            |
-| ----------------------------- | ---------------------------- | ---------------------------------- |
-| **Sector (2 digits)**         | Broad economic segment       | 10 – Energy                        |
-| **Industry Group (4 digits)** | Subdivision of sector        | 1010 – Energy Equipment & Services |
-| **Industry (6 digits)**       | More specific categorization | 101010 – Oil & Gas Drilling        |
-| **Sub-Industry (8 digits)**   | Most granular level          | 10101010 – Offshore Drilling       |
+- 11 Sectors
+- 24 Industry Groups
+- 69 Industries
+- 158 Sub-Industries
 
 
-To give you an idea, there are : 
+### Energy Sector GICS Breakdown
 
-11 sectors
-24 industry groups
-69 industries
-158 sub-industries
-
-
-Our Focus is on Energy, so here is energy sector broken down using the GICS heirarchy 
-
+```
 Sector 10: ENERGY
   ├── Industry Group 1010: Energy Equipment & Services
   │     ├── Industry 101010: Oil & Gas Drilling
@@ -43,99 +45,84 @@ Sector 10: ENERGY
         ├── Industry 10102030: Oil & Gas Refining & Marketing
         ├── Industry 10102040: Oil & Gas Storage & Transportation
         └── Industry 10102050: Coal & Consumable Fuels
+```
+
+We will focus on 10102020 - Oil \& Gas Exploration and Production (E\&P).
+
+## Oil Exploration \& Production Companies
+
+These companies make up the upstream segment—the first link in the energy supply chain.
 
 
+| Activity | Description |
+| :-- | :-- |
+| Exploration | Identify underground or underwater reserves using geological data, seismic surveys |
+| Drilling | Deploy rigs to extract crude oil or natural gas |
+| Production | Pump hydrocarbons from wells, bring to surface |
+| Sale of Commodities | Sell crude oil and gas to midstream or refiners at spot or forward-linked prices |
+| Hedging | Use derivatives to lock in future oil/gas prices for revenue certainty |
 
-Since the list of companies under Sector 10 is exhaustive , Let us select one of the industry 10102020 - Oil and Gas Exploration and Production.
+Revenue comes from selling crude oil and natural gas under benchmarks such as WTI, Brent Crude, and Henry Hub.
 
-## Oil Exploration and Production Companies 
+**Costs include:**
 
-They are the upstream segment of the oil and gas industry — the first link in the energy supply chain.
-
-| Activity                | Description                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------- |
-| **Exploration**         | Identify underground or underwater reserves using geological data, seismic surveys                |
-| **Drilling**            | Deploy rigs to extract crude oil or natural gas                                                   |
-| **Production**          | Pump hydrocarbons from wells, bring to surface                                                    |
-| **Sale of Commodities** | Sell crude oil and gas to midstream or refiners (downstream) at **spot or forward-linked prices** |
-| **Hedging**             | Use derivatives to lock in future oil/gas prices for revenue certainty                            |
-
-
-Revenue is from selling Crude oil , Natural gas under some benchmark such as WTI , Brent Crude , Henry Hub. 
-
-Costs include :
-
-CapEx: Drilling rigs, land leasing, seismic exploration
-OpEx: Labor, transport, compliance, water disposal
-Depletion: Hydrocarbons are non-renewable → assets decline over time
-Hedging Costs: Cost of options/futures used to lock in prices
+- CapEx: Drilling rigs, land leasing, seismic exploration
+- OpEx: Labor, transport, compliance, water disposal
+- Depletion: Non-renewable resources decline over time
+- Hedging Costs: Cost of options/futures for price certainty
 
 
-From a Supply Chain POV : 
+### Supply Chain Perspective
 
-| Stage       | GICS Sub-Industry Code | GICS Name                           | Example Role              |
-|-------------|------------------------|-------------------------------------|---------------------------|
-| Upstream    | 10102020               | Oil & Gas Exploration & Production  | E&P firms (e.g., EOG, DVN)|
-| Midstream   | 10102040               | Oil & Gas Storage & Transportation  | Pipelines, LNG terminals  |
-| Downstream  | 10102030               | Oil & Gas Refining & Marketing      | Refiners, retailers        |
+| Stage | GICS Sub-Industry Code | GICS Name | Example Role |
+| :-- | :-- | :-- | :-- |
+| Upstream | 10102020 | Oil \& Gas Exploration \& Production | E\&P firms (EOG, DVN, etc.) |
+| Midstream | 10102040 | Oil \& Gas Storage \& Transportation | Pipelines, LNG terminals |
+| Downstream | 10102030 | Oil \& Gas Refining \& Marketing | Refiners, retailers |
 
+**Note:** E\&P firms locate reserves, drill, and produce oil/gas; they do not refine or transport it.
 
+### Top E\&P Companies (Sub-Industry 10102020)
 
-These firms:
+| Ticker | Company | Market Cap | Notes |
+| :-- | :-- | :-- | :-- |
+| EOG | EOG Resources | ~$75B | Diversified US shale giant |
+| PXD | Pioneer Natural Resources | ~$60B (XOM) | Big Permian Basin player |
+| FANG | Diamondback Energy | ~$40B | Permian-focused, efficient |
+| DVN | Devon Energy | ~$30B | Large natural gas exposure |
+| CTRA | Coterra Energy | ~$25B | Marcellus + Permian mixed |
+| APA | APA Corp (Apache) | ~$12B | Africa + US focus |
+| MUR | Murphy Oil | ~$8B | Offshore + onshore |
+| SM | SM Energy | ~$6B | Mid-cap shale driller |
+| MTDR | Matador Resources | ~$7B | Small cap, solid growth |
+| AR | Antero Resources | ~$8B | Heavy natural gas/Appalachia |
 
-Locate reserves (onshore/offshore)
-Drill and pump crude oil and natural gas
-Do not refine or transport; they sell to mid/downstream firms
+### Why Cointegration Makes Sense in E\&P
 
+| Reason | Implication |
+| :-- | :-- |
+| Common macro drivers (oil/natural gas) | Co-movement in fundamentals |
+| Similar business models | Same revenue and cost drivers |
+| Temporary divergence | Spread mean-reverts |
+| ETF/flow-based pressure | Technical co-movement |
+| Shared inputs (labor, land) | Structural cash flow linkage |
 
-Top companies in 10102020 sub-industry 
+## Ticker Selection Criteria
 
-| Ticker   | Company                   | Market Cap                | Notes                              |
-| -------- | ------------------------- | ------------------------- | ---------------------------------- |
-| **EOG**  | EOG Resources             | \~\$75B                   | Diversified US shale giant         |
-| **PXD**  | Pioneer Natural Resources | \~\$60B (acquired by XOM) | Big Permian Basin player           |
-| **FANG** | Diamondback Energy        | \~\$40B                   | Permian-focused, capital-efficient |
-| **DVN**  | Devon Energy              | \~\$30B                   | Large natgas exposure              |
-| **CTRA** | Coterra Energy            | \~\$25B                   | Marcellus + Permian (oil/gas mix)  |
-| **APA**  | APA Corp (Apache)         | \~\$12B                   | Africa + US focus                  |
-| **MUR**  | Murphy Oil                | \~\$8B                    | Offshore + onshore                 |
-| **SM**   | SM Energy                 | \~\$6B                    | Mid-cap shale driller              |
-| **MTDR** | Matador Resources         | \~\$7B                    | Smaller cap, solid growth          |
-| **AR**   | Antero Resources          | \~\$8B                    | Heavy natural gas / Appalachia     |
+Based on screening (e.g., Finviz):
 
+1. Market Cap ≥ $2B
+2. Volume > 300k
+3. Price > $10
+4. Sector: Energy; Industry: Oil \& Gas E\&P
+5. Country: USA
+6. Realistic PE Ratio > 0
 
+**Selected Tickers:**
 
-### Why cointegration makes sense in E&P 
-
-
-| Reason                                     | Implication                      |
-| ------------------------------------------ | -------------------------------- |
-| Common macro drivers (oil/natgas)          | Co-movement in fundamentals      |
-| Similar business models                    | Same revenue and cost levers     |
-| Temporary divergence                       | Creates spreads to mean-revert   |
-| Sector ETFs and flow-based pressure        | Creates technical co-movement    |
-| E\&P firms use shared inputs (labor, land) | Structural linkage in cash flows |
-
-
-
-
-
-![alt text](image.png)
-
-
-Based on the screenshot above from finviz. We will be selecting tickers that has : 
-1. Market Cap >= 2B
-2. Volumne >300k 
-3. Price > 10$
-4. Sector : Energy ; Industry : Oil and Gas E&P
-5. Country == USA 
-6. Realistic PE Ratio > 0 
-
-
-``` 
-
+```python
 tickers = [
-    "COP",  # Conoco Phillips
+    "COP",  # ConocoPhillips
     "EOG",  # EOG Resources
     "HES",  # Hess Corp
     "OXY",  # Occidental Petroleum
@@ -155,180 +142,138 @@ tickers = [
     "MGY",  # Magnolia Oil & Gas
     "CRC",  # California Resources
 ]
-
 ```
 
 
+## Beta and Beta Neutrality
 
-### Beta 
+### What is Beta?
 
-Beta is a measure of a stock's sensitivity to a factor — most often the market.
+Beta measures a stock's sensitivity to a factor (usually the market).
 
-
-
-### Beta Formula
-
-The formula for beta is:
+#### Formula:
 
 $$
 \beta = \frac{\text{Cov}(R_i, R_m)}{\text{Var}(R_m)}
 $$
 
 Where:
-- \( R_i \): Return of the individual stock
-- \( R_m \): Return of the market
-- \( \text{Cov}(R_i, R_m) \): Covariance between the stock and the market
-- \( \text{Var}(R_m) \): Variance of the market returns
 
+- $ R_i $: Stock return
+- $ R_m $: Market return
+- Cov, Var indicate covariance and variance
 
-This equation helps quantify the sensitivity of a stock's returns to the overall market.
+This quantifies how the stock moves with the market.
+
+#### Regression Model:
 
 $$
 R_{\text{stock}} = \alpha + \beta \cdot R_{\text{market}} + \epsilon
 $$
 
+### Beta-Neutral Portfolios
 
+You hedge so your net factor exposure is zero.
 
-### Beta Neutrality
+Suppose:
 
-You hedge your position such that your net exposure to the factor (e.g., oil price, market) is zero.
+- Long Stock A $ (\beta_A = 1.2) $
+- Short Stock B $ (\beta_B = 0.9) $
 
-#### In Equations:
-Suppose you long Stock A and short Stock B:
+Net beta condition:
 
-Let’s say:  
-\( \beta_A = 1.2 \), \( \beta_B = 0.9 \)
-
-A beta-neutral portfolio should satisfy:  
-\[
+$$
 \beta_{\text{net}} = w_A \cdot \beta_A - w_B \cdot \beta_B = 0
-\]
+$$
 
-Solve for weights \( w_A \), \( w_B \) such that this holds:  
-\[
-w_A \cdot \beta_A = w_B \cdot \beta_B
-\]
+Solving:
 
-Rearranging:  
-\[
+$$
 \frac{w_A}{w_B} = \frac{\beta_B}{\beta_A}
-\]
+$$
 
-For example, if \( \beta_A = 1.2 \) and \( \beta_B = 0.9 \):  
-\[
-\frac{w_A}{w_B} = \frac{0.9}{1.2} = \frac{3}{4}
-\]
+If $\beta_A = 1.2$, $\beta_B = 0.9$: $\frac{w_A}{w_B} = \frac{3}{4}$
 
-This means for every 4 units of Stock B shorted, you would long 3 units of Stock A to achieve beta neutrality.
+So, long 3 units of A for every 4 units of B shorted.
 
+### Pairs Trading and Beta Neutrality
 
+Pairs trading targets cointegrated assets with mean-reverting spreads. But is the spread beta neutral?
 
-### Beta Neutrality in Pairs Trading
+#### Adjusted Spread Formula
 
-In pairs trading, we aim to identify two cointegrated assets such that the spread between their prices is stationary. This implies that the spread is mean-reverting. However, can we make this spread beta neutral?
-
-#### Adjusted Spread and Beta Neutrality
-
-If the spread has a non-zero beta to an underlying factor (e.g., WTI crude oil), we can adjust the spread as follows:
-
-\[
+$$
 \text{Adjusted Spread} = \text{Original Spread} - w \cdot R_{\text{WTI}}
-\]
+$$
 
 Where:
-- \( \text{Original Spread} = P_A - \beta \cdot P_B \)
-- \( w \): Weight of the hedge
-- \( R_{\text{WTI}} \): Return of WTI crude oil
 
-The question is: **Is the adjusted spread still mean-reverting?**
+- Original Spread: $ P_A - \beta \cdot P_B $
+- $ w $: Hedge weight
+- $ R_{WTI} $: WTI crude return
 
-#### Cointegrated Triplet
 
-By introducing the hedge, we effectively create a three-leg spread. If this adjusted spread passes the cointegration test for a triplet, we can conclude that the beta-neutral spread is mean-reverting.
+#### Is the Adjusted Spread Mean-Reverting?
 
-#### When Might This Work?
+By introducing a hedge, we get a three-leg spread. If the Johansen test confirms cointegration among $[P_A, P_B, \text{Hedge Asset}]$, the spread is still mean-reverting.
 
-- The exposure to WTI (\( \gamma \)) is small.
-- The adjusted spread remains approximately close to the original spread.
+## Dynamic Hedging Strategy
 
-#### What If the Adjusted Spread Fails the Cointegration Test?
+1. **Hedge WTI Risk:**
+Use CL=F (WTI futures), XOP, or similar oil ETFs.
+2. **Careful Hedge Adjustment:**
+Ensure stationarity is preserved but risk is lowered.
+3. **Accept Minor Deviations:**
+Slight deviations can improve PnL stability without sacrificing the core signal.
 
-If the adjusted spread does not form a cointegrated triplet, we can still trade the original mean-reverting spread (2-leg) while dynamically hedging the WTI exposure.
+## Implementation Steps
 
-### Dynamic Hedging Strategy
+Given the E\&P universe:
 
-1. **Hedge WTI Exposure**  
-    Use instruments like CL=F (WTI futures), XOP (Oil & Gas ETF), or another oil ETF to hedge the exposure.
+1. **ADF Test for the Spread:**
 
-2. **Adjust Hedge Carefully**  
-    Ensure the hedge does not destroy the stationarity of the original spread but reduces portfolio risk.
-
-3. **Accept Slight Deviations**  
-    Accept minor deviations from cointegration to maintain the original signal while improving PnL stability.
-
-### Implementation Steps
-
-Given the E&P universe and pairs trading setup:
-
-1. **Run ADF Test on the Original Spread**  
-    The original spread is defined as:
-    \[
-    S_t = P_A - \beta \cdot P_B
-    \]
-    Check if \( S_t \) is stationary using the Augmented Dickey-Fuller (ADF) test.
-
-2. **Check Exposure to WTI**  
-    Regress the spread \( S_t \) on WTI returns:
-    \[
-    S_t \sim \gamma \cdot R_{\text{WTI}}
-    \]
-    If \( \gamma \neq 0 \), the spread has exposure to WTI.
-
-3. **Consider Adjustments**  
-    - Add a hedge leg with CL=F or XOP and re-test for stationarity.
-    - Alternatively, build a 3-asset cointegration model using the Johansen test.
-
-### Formulas for Better Understanding
-
-#### Original Spread:
-\[
+$$
 S_t = P_A - \beta \cdot P_B
-\]
+$$
 
-#### Adjusted Spread:
-\[
-\text{Adjusted Spread} = S_t - w \cdot R_{\text{WTI}}
-\]
+Test if $ S_t $ is stationary (Augmented Dickey-Fuller test).
+2. **Check WTI Exposure:**
+Run regression:
 
-#### Exposure to WTI:
-\[
+$$
 S_t \sim \gamma \cdot R_{\text{WTI}}
-\]
+$$
 
-#### Beta Neutrality Condition:
-\[
-\beta_{\text{net}} = w_A \cdot \beta_A - w_B \cdot \beta_B = 0
-\]
+If $ \gamma \neq 0 $: Spread has WTI exposure.
+3. **Hedge and Re-Test:**
+Add CL=F/XOP hedge and check for cointegration with the Johansen test.
 
-#### Cointegration Test:
-For a 3-asset model, use the Johansen test to check for cointegration among:
-\[
-P_A, P_B, \text{and Hedge Asset (e.g., CL=F or XOP)}
-\]
+## Key Formulas Recap
 
-This approach ensures that we maintain the original signal while managing risk effectively.
+- **Original Spread:**
+$ S_t = P_A - \beta \cdot P_B $
+- **Adjusted Spread:**
+$ Adj. Spread = S_t - w \cdot R_{WTI} $
+- **WTI Exposure:**
+$ S_t \sim \gamma \cdot R_{WTI} $
+- **Beta Neutrality:**
+$ \beta_{net} = w_A \cdot \beta_A - w_B \cdot \beta_B = 0 $
+- **Johansen Test:**
+Cointegration among $ P_A, P_B, Hedge Asset $
 
 
+## Running on Your Local Machine
 
+1. **Create Environment:**
 
-## Running it on your local
-
+```bash
 conda env create -f environment.yml
 conda activate energy-trading
+```
 
+2. **Register Kernel:**
 
-register env 
-
+```bash
 python -m ipykernel install --user --name=energy-trading
-
+```
 
