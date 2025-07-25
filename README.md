@@ -144,6 +144,16 @@ tickers = [
 ]
 ```
 
+Our E&P stocks depend on underlying futures of WTI Crude Oil , Brent Crude Futures , Natural Gas Futures 
+
+| Stock Type |	Main Exposure	 | Most Relevant Futures	|Notes | 
+| :-- | :-- | :-- | :-- |
+| Typical U.S. E&P	 |  Oil (WTI)	    |    WTI > Brent	     | Domestic oil sales priced off WTI |
+| Export/Global E&P  |	Oil (WTI, Brent)| 	WTI ≈ Brent          | 	Export sales or contracts use Brent | 
+| Gas-Weighted E&P   |	Natural Gas     | 	Nat Gas > WTI/Brent	 | Focused on Henry Hub-linked pricing | 
+| Diversified E&P	 |  Oil & Nat Gas   | 	WTI, Nat Gas, Brent	 | Material sensitivity to all three |
+
+
 
 ## Beta and Beta Neutrality
 
