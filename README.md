@@ -261,15 +261,15 @@ Add CL=F/XOP hedge and check for cointegration with the Johansen test.
 ## Key Formulas Recap
 
 - **Original Spread:**
-$ S_t = P_A - \beta \cdot P_B $
+$$ S_t = P_A - \beta \cdot P_B $$
 - **Adjusted Spread:**
-$ Adj. Spread = S_t - w \cdot R_{WTI} $
+$$ Adj. Spread = S_t - w \cdot R_{WTI} $$
 - **WTI Exposure:**
-$ S_t \sim \gamma \cdot R_{WTI} $
+$$ S_t \sim \gamma \cdot R_{WTI} $$
 - **Beta Neutrality:**
-$ \beta_{net} = w_A \cdot \beta_A - w_B \cdot \beta_B = 0 $
+$$ \beta_{net} = w_A \cdot \beta_A - w_B \cdot \beta_B = 0 $$
 - **Johansen Test:**
-Cointegration among $ P_A, P_B, Hedge Asset $
+Cointegration among $$ P_A, P_B, Hedge Asset $$
 
 
 ## Running on Your Local Machine
